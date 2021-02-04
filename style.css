@@ -1,0 +1,100 @@
+.marquee {
+    width: auto;
+    line-height: 25px;
+    background-color: red;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.jumbotron p {
+    font-size: 15px;
+}
+
+.jumbotron {
+    background-color: darkturquoise;
+}
+
+.float-container {
+    padding: 2px;
+}
+
+.float-child {
+    float: left;
+    padding: 20px;
+}
+
+.movie_head i {
+    float: right;
+}
+
+.movie_text span {
+    color: gold;
+}
+
+img {
+    height: 5rem;
+    width: 50rem;
+}
+
+row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.travel_mainDiv {
+    float: left;
+    width: 33.33%;
+    padding: 3px;
+    border: 1px solid white;
+}
+
+.movie_head {
+    font-size: 20px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    border-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+}
+
+.movie_head i {
+    float: right;
+}
+
+.movie_text span {
+    color: orange;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
